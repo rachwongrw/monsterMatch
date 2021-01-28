@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         var feetId = feet.id
 
         if (headId === bodyId && bodyId === feetId) {
-            binding.msgText.text = "You match " + head.name
+            binding.msgText.text = "You match " + head.name + "!"
         } else {
             binding.msgText.text = ""
         }
