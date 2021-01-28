@@ -5,17 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <ImageView
         android:id="@+id/monster_head_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/monster1_head"
+        android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
     />
 
+    <ImageView
+        android:id="@+id/monster_body_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/monster1_body"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/monster_head_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/monster_feet_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/monster1_feet"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/monster_body_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
     <Button
+        android:id="@+id/shuffle_button"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/match_btn"
